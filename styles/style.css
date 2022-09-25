@@ -17,6 +17,10 @@
     color: var(--blanco)
 }
 
+a, a:visited {
+    color: inherit !important;
+}
+
 body {
     background-image: linear-gradient(to bottom right, var(--back-oscuro), var(--back-medio));
     color: var(--blanco)
@@ -66,7 +70,12 @@ body {
 .navbar-toggler.collapsed .top-bar {
         transform: rotate(0);
         background-color: var(--blanco)
-        
+    }
+
+.navbar-toggler.collapsed:hover > span {
+        transform: rotate(0);
+        background-color: var(--destacado);
+        /* box-shadow: 0px 0px 12px var(--destacado); */
     }
     
 .navbar-toggler.collapsed .middle-bar {
@@ -85,6 +94,9 @@ body {
 .nav-link {
     text-align: center;
     color: var(--blanco);
+    transition: none;
+
+
 }
 
 li.nav-item {
@@ -93,13 +105,15 @@ li.nav-item {
     justify-content: space-between;
     align-items: center;
     margin: 5px 0 5px 0;
-    transition: 1s
+    transition: 0.2s
 }
 
-li.nav-item:hover {
+li.nav-item:hover,
+li.nav-item:hover > ion-icon {
     background-color: var(--destacado);
+    color: var(--back-oscuro);
     border-radius: 5px;
-    transition: 0.25s
+    transition: 0.2s
 }
 
 .toggler-icon {
@@ -108,7 +122,7 @@ li.nav-item:hover {
     border-radius: 6px;
     background-color: var(--blanco);
     display: block;
-    transition: all 0.2s;
+    /* transition: all 0.2s; */
 }
 
 
@@ -189,8 +203,8 @@ h3.nombre {
   }
   
   .percentage {
-    fill: #666;
-    font-family: sans-serif;
+    fill: var(--blanco);
+    font-family: inherit;
     font-size: 0.3em;
     text-anchor: middle;
   }
