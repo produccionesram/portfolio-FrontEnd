@@ -17,6 +17,15 @@
     color: var(--blanco)
 }
 
+
+#hero {
+    background-image: url("/images/fullstack-min.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), var(--back-medio)), url("/images/fullstack-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+  }
+
 a, a:visited {
     color: inherit !important;
 }
@@ -41,6 +50,7 @@ body {
     background-image: linear-gradient(to top right, var(--back-medio), var(--back-oscuro));
 }
 
+.navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -53,7 +63,8 @@ body {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
     background-color: var(--destacado);
-    
+    /* transition: 0.2s */
+
     }
     
 .navbar-toggler .middle-bar {
@@ -65,28 +76,36 @@ body {
         transform: rotate(-45deg);
         transform-origin: 10% 10%;
         background-color: var(--destacado);
+        /* transition: 0.2s */
+
     }
     
 .navbar-toggler.collapsed .top-bar {
         transform: rotate(0);
         background-color: var(--blanco)
+        
+        
     }
 
 .navbar-toggler.collapsed:hover > span {
         transform: rotate(0);
         background-color: var(--destacado);
-        /* box-shadow: 0px 0px 12px var(--destacado); */
+        box-shadow: 0px 0px 12px var(--destacado);
+        /* transition: 0.2s */
+
     }
     
 .navbar-toggler.collapsed .middle-bar {
         opacity: 1;
         filter: alpha(opacity=100);
-        
+        transition: 0.2s
+
     }
     
 .navbar-toggler.collapsed .bottom-bar {
         transform: rotate(0);
-        background-color: var(--blanco)
+        background-color: var(--blanco);
+        /* transition: 0.2s */
 
     }
 
@@ -122,7 +141,7 @@ li.nav-item:hover > ion-icon {
     border-radius: 6px;
     background-color: var(--blanco);
     display: block;
-    /* transition: all 0.2s; */
+    transition: all 0.2s;
 }
 
 
@@ -133,15 +152,6 @@ li.nav-item:hover > ion-icon {
 ion-icon {
     color: var(--blanco);
     margin: 0 5px 0 0;
-}
-
-svg.ionicon.s-ion-icon {
-    width:130px;
-
-}
-
-h3.nombre {
-    text-align: center;
 }
 
 .col-sm-4 {
