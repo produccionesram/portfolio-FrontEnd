@@ -12,8 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
     <body>
-    <header>
-      <div class="container p-0">
+      <main>
+
+        <header>
+      <!-- Navbar -->
+      <div class="d-flex flex-column p-0 vh-100">
         <nav class="navbar bg-nav navbar-expand-lg m-0 p-0">
               <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
                 <img src="/images/AP_logo.png" alt="Argentina Programa" width="150">
@@ -39,12 +42,23 @@
                   </li>
                 </ul>
               </nav>
-
-            </div>
+              <div class="container d-flex flex-grow-1" id="hero">
+                <div class="row text-center align-items-center justify-content-center">
+                  <div class="col-12 col-lg-6">
+                    <img src="./images/avatar.jpeg" alt="Foto Mauro Romero" class="avatar">
+                    <p class="h3 font-weight-bold">Mauro Romero</p>
+                    <p class="h6 font-weight-bold">Full Stack Developer Jr.</p>
           
+                    </div>
+                  <div class="col-12 col-lg-6">
+                    <p class="m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum laboriosam veritatis nisi modi similique pariatur inventore debitis, sapiente maiores ad praesentium illo nobis, mollitia magni distinctio! Incidunt, modi repellendus.</p>
+                  </div>
+                </div>
+              </div>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            </div>          
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -64,33 +78,14 @@
     </div>
   </div>
 </div>
-
-</header>
-
-<!-- Seccion Hero -->
-<main>
-
-  <section>
-    <div class="container" id="hero">
-      <div class="row text-center align-items-center justify-content-center vh-100">
-        <div class="col-12 col-lg-6">
-          <img src="./images/avatar.jpeg" alt="Foto Mauro Romero" class="avatar">
-          <p class="h3 font-weight-bold">Mauro Romero</p>
-          <p class="h6 font-weight-bold">Full Stack Developer Jr.</p>
-
-          </div>
-        <div class="col-12 col-lg-6">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem at nam!</p>
-        </div>
-      </div>
-    </div>
+<!-- FIN Modal -->
+        </header>
 
 
 
-</section>
+
 </main>
 
-<!--
 <div class="container">
   <div class="row">
   <div class="col-md-6"><div class="card">
@@ -104,7 +99,7 @@
 </div>
 </div>
 
-<!-- Seccion Educacion 
+<!-- Seccion Educacion  -->
 <section class="container-fluid">
   <div class="col-4-sm container">
     <h3>Formación</h3>
@@ -121,7 +116,7 @@
 
 
 
-<!-- Skills circulares 
+<!-- Skills circulares -->
 <section>
   <article>
     <div class="col-4-sm container">
@@ -184,7 +179,7 @@
   </article>
 </section>
 
-<!-- Seccion Proyectos 
+<!-- Seccion Proyectos -->
 
 <div class="card mb-8" style="max-width: 540px;">
   <div class="row g-0 px-0">
@@ -236,7 +231,7 @@
       <h3>Proyecto 2</h3>
     </div>
   </div>
-</section>  -->
+</section> 
 
 
 

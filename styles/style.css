@@ -32,7 +32,8 @@ a, a:visited {
 
 body {
     background-image: linear-gradient(to bottom right, var(--back-oscuro), var(--back-medio));
-    color: var(--blanco)
+    color: var(--blanco);
+    height:100%;
 }
 
 
