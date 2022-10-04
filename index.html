@@ -9,61 +9,73 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">    <title>| Mauro Romero |</title> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600;900&display=swap" rel="stylesheet">    <link rel="icon" type="image/x-icon" href="./favicon.png">
+
+
 </head>
     <body>
       <main>
 
         <header>
+          
+          
       <!-- Navbar -->
-      <div class="d-flex flex-column p-0 vh-100">
-        <nav class="navbar bg-nav navbar-expand-lg m-0 p-0">
-              <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
-                <img src="/images/AP_logo.png" alt="Argentina Programa" width="150">
+        
+        <nav class="navbar container-fluid bg-nav navbar-expand-lg m-n5 p-0">
+              <a class="navbar-brand" target="_blank" href="https://argentinaprograma.inti.gob.ar/">
+                <img class="img-fluid" src="/images/AP_logo.png" alt="Argentina Programa" width="120px">
               </a>
               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
               </button>       
-               <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center justify-content-center">
-                  <li class="nav-item">      
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
+                  <li class="nav-item d-flex align-items-center justify-content-center ms-2">      
                     <ion-icon name="logo-linkedin"></ion-icon>
-                    <a class="nav-link" aria-current="page" href="https://www.linkedin.com/in/mau-romero/" target="_blank">LinkedIn</a>
+                    <a class="nav-link d-flex ps-0" aria-current="page" href="https://www.linkedin.com/in/mau-romero/" target="_blank">LinkedIn</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-flex align-items-center justify-content-center ms-2">
                     <ion-icon name="logo-github"></ion-icon>
-                    <a class="nav-link" href="https://github.com/" target="_blank">Github</a>
+                    <a class="nav-link d-flex ps-0" href="https://github.com/" target="_blank">Github</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-flex align-items-center justify-content-center ms-2">
                     <ion-icon name="log-in"></ion-icon>
-                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Login</a>
+                    <a class="nav-link d-flex ps-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Login</a>
                   </li>
                 </ul>
               </nav>
-              <div class="container d-flex flex-grow-1" id="hero">
-                <div class="row text-center align-items-center justify-content-center">
-                  <div class="col-12 col-lg-6">
-                    <img src="./images/avatar.jpeg" alt="Foto Mauro Romero" class="avatar">
-                    <p class="h3 font-weight-bold">Mauro Romero</p>
-                    <p class="h6 font-weight-bold">Full Stack Developer Jr.</p>
-          
-                    </div>
-                  <div class="col-12 col-lg-6">
-                    <p class="m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum laboriosam veritatis nisi modi similique pariatur inventore debitis, sapiente maiores ad praesentium illo nobis, mollitia magni distinctio! Incidunt, modi repellendus.</p>
-                  </div>
-                </div>
-              </div>
+              <!-- HERO SECTION -->
+              <div class="container-fluid flex-grow-1 h-100" id="hero">
+                <div class="row mx-5">
+                  <div class="col-12 col-lg-6 g-5 my-auto">
+      <img src="./images/mau_min.png" alt="foto" class="img-fluid rounded-circle avatar">
+    </div>
+    <div class="col-12 col-lg-6 my-auto flex-grow-1">
+      <p class="h1 titulo fw-bold">Hola, soy <span class="texto-destacado">Mauro Romero</span></p>
+      <p class="h4 titulo fst-italic mb-4">Full Stack Developer Jr.</p>
+      <p class="h5 subtitulo fw-light">Entusiasta de la tecnología, la comunicación y las experiencias digitales.</p>
+    </div>
+  </div>
+</div>
+                <!-- fin HERO SECTION -->
 
-            </div>          
 
+                <!-- Modal Login -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header d-flex">
         <ion-icon name="log-in"></ion-icon>
-        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+        <h5 class="modal-title h3" id="staticBackdropLabel">Login</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -83,35 +95,26 @@
 
 
 
+<!-- Seccion Experiencia  -->
+<section>
+  
+  <!-- Card Content Manger Telefe y America -->
 
-</main>
-
-<div class="container">
-  <div class="row">
-  <div class="col-md-6"><div class="card">
-    <img src="/images/1200x500.png">
-    <h3>Experiencia 1</h3>
-  </div>
-</div>
-<div class="col-md-6"><div class="card">
-  <img src="/images/1200x500.png">
-  <h3>Experiencia 1</h3>
-</div>
-</div>
+</section>
 
 <!-- Seccion Educacion  -->
-<section class="container-fluid">
-  <div class="col-4-sm container">
+<section class="container">
+  <div class="row">
     <h3>Formación</h3>
+</div>
+<div class="row">
+  <div class="col-md-6">
     <div class="card">
-      <img src="/images/1200x500.png">
-      <h3>Edu 1</h3>
-    </div>
-    <div class="card">
-      <img src="/images/1200x500.png">
-      <h3>Edu 2</h3>
+      <img src="./images/1200x500.png" alt="">
+      <div class="card-title">Escuela 1</div>
     </div>
   </div>
+</div>
 </section>
 
 
@@ -181,7 +184,7 @@
 
 <!-- Seccion Proyectos -->
 
-<div class="card mb-8" style="max-width: 540px;">
+<div class="card mb-6" style="max-width: 540px;">
   <div class="row g-0 px-0">
     <div class="col-md-4">
       <a href="http://wap3.enjuego.com/tratohecho/" class="stretched-link" target="_blank">
@@ -189,7 +192,7 @@
     </a>
     </div>
   
-    <div class="col-md-8">
+    <div class="col-md-6">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -202,7 +205,7 @@
 
 
 
-<div class="card mb-8" style="max-width: 540px;">
+<div class="card mb-6" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
       <a href="http://wap3.enjuego.com/tratohecho/" class="stretched-link" target="_blank">
@@ -238,11 +241,22 @@
 
 
 
+</main>
 
 
-
+<footer class="container-fluid py-4 text-center bg-dark text-secondary">
+  <p>Lorem, ipsum dolor.</p>
+</footer>
 
 <!-- Scripts finales -->
+
+<!-- <script type="text/javascript">
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    nav.classList.toggle('sticky', window.scrollY > 0);
+  }) -->
+
+</script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
